@@ -1,10 +1,17 @@
 /**
  * Hide and Seek Header Styles
+ *
+ * To do
+ * - Make responsive breakpoint an option setting.
+ * - Make fade out animation an option setting.
  */
 
-.hideandseek-hide-down {
-  /* display: none; Enable this if you don't like the fade out animation. */
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 1s, opacity 0.5s linear;
+/* The Avada default breakpoint is 800px. Change as needed. */
+@media screen and (min-width: 800px) {
+  .hideandseek-hide-down {
+    /* display: none; Enable this if you don't like the fade out animation. */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear !important;
+  }
 }
