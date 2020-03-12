@@ -1,7 +1,10 @@
 /**
  * Hide and Seek Header Styles
  */
- 
+
 .hideandseek-hide-down {
-  display: none;
+  /* display: none; Enable this if you don't like the fade out animation. */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.5s linear;
 }
