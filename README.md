@@ -1,3 +1,5 @@
+![Hide and Seek Header logo black]( https://marklchaves.files.wordpress.com/2020/03/hide-and-seek-header-logo-black-1280w.png)
+
 # Hide and Seek Header Plugin
 
 ## For Avada by ThemeFusion
@@ -33,6 +35,12 @@ That's it!
 
 ---
 
-## Support My Work
+## Compliance
+
+This plugin follows the [WordPress Plugin Handbook](https://developer.wordpress.org/plugins/). Namely that it cannot be called directly via a public URL, has a unique namespace, and properly [enqueues its CSS and JavaScript assets](https://developer.wordpress.org/plugins/javascript/enqueuing/).
+
+---
+
+## I'll Drink to That ;-)
 
 <a href='https://ko-fi.com/D1D7YARD' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi5.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
