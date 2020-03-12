@@ -3,7 +3,7 @@
 /*
 Plugin Name: Hide and Seek Header
 Plugin URI: https://github.com/marklchaves/hide-and-seek-header
-Description: Hides the site header on down scroll events. Eventually it will hide the header on scroll up or down or both.
+Description: Hides the Avada site header on down scroll events. Eventually, it will hide the header on scroll up or down or both, and it will support other themes.
 Version: 0.0.1
 Author: caught my eye
 Author URI: https://caughtmyeye.dev/about/
