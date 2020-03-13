@@ -37,7 +37,13 @@ That's it!
 
 ## Compliance
 
-This plugin follows the [WordPress Plugin Handbook](https://developer.wordpress.org/plugins/). Namely that it cannot be called directly via a public URL, has a unique namespace, and properly [enqueues its CSS and JavaScript assets](https://developer.wordpress.org/plugins/javascript/enqueuing/).
+This plugin follows the [WordPress Plugin Handbook](https://developer.wordpress.org/plugins/). Namely that it cannot be called directly via a public URL, has a unique namespace, and [properly enqueues](https://developer.wordpress.org/plugins/javascript/enqueuing/) its CSS and JavaScript assets.
+
+---
+
+## Roadmap
+
+I'll keep an updated wishlist on [the Wiki](https://github.com/marklchaves/hide-and-seek-header/wiki) for this repo.
 
 ---
 
