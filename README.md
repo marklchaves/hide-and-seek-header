@@ -26,7 +26,7 @@ Kick the tires on [CodePen](https://codepen.io/marklchaves/pen/RwNOVzQ).
 
 ## Installation
 
-1. Drop-in&mdash;manually upload the plugin files to the /wp-content/plugins/hide-and-seek-header directory or upload the plugin zip file via your wp-admin **Plugins** > **Add New** > **Upload Plugin**.
+1. Drop-in&mdash;manually upload the plugin files to the /wp-content/plugins/hide-and-seek-header directory or upload the plugin [zip file](https://github.com/marklchaves/hide-and-seek-header/raw/master/hide-and-seek-header.zip) via your wp-admin **Plugins** > **Add New** > **Upload Plugin**.
 2. Activate the plugin through the wp-admin **Plugins** page.
 
 That's it!
