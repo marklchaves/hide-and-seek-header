@@ -12,6 +12,6 @@
     /* display: none; Enable this if you don't like the fade out animation. */
     visibility: hidden;
     opacity: 0;
-    transition: visibility 1s, opacity 0.5s linear !important;
+    transition: visibility 0.5s, opacity 0.5s linear !important;
   }
 }
