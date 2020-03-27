@@ -26,6 +26,8 @@
         $breakpoint_opts =
             (empty($options['breakpoint'])) ? 0 : 1;
 
+        $animation_opts =
+            (empty($options['animation'])) ? 0 : 1;
 
         ?>
         <?php
@@ -33,7 +35,8 @@
         do_settings_sections($this->plugin_name);
         ?>
 
-        <!-- Input Fields for the Hide and Seek Header -->
+        <!-- Checkbox Fields for the Hide and Seek Header -->
+
         <fieldset>
             <legend class="screen-reader-text">
                 <span>Responsive Setting</span>
@@ -43,6 +46,18 @@
                     <?php esc_attr_e('Disable on Mobile?', $this->plugin_name); ?>
                 </span>
                 <input type="checkbox" id="<?php echo $this->plugin_name; ?>-breakpoint" name="<?php echo $this->plugin_name; ?>[breakpoint]" value="1" <?php checked($breakpoint_opts, 1); ?>/>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="screen-reader-text">
+                <span>Animation Setting</span>
+            </legend>
+            <label for="<?php echo $this->plugin_name; ?>-animation">
+                <span>
+                    <?php esc_attr_e('Enable on Animation?', $this->plugin_name); ?>
+                </span>
+                <input type="checkbox" id="<?php echo $this->plugin_name; ?>-animation" name="<?php echo $this->plugin_name; ?>[animation]" value="1" <?php checked($animation_opts, 1); ?>/>
             </label>
         </fieldset>
 
