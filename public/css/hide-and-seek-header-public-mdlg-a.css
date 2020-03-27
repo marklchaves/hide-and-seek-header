@@ -2,13 +2,15 @@
  * Hide and Seek Header Styles for 
  * 
  * 1. Medium & large devices
- * 2. No fade
+ * 2. 0.5 seconds fade out
  *
  */
 
 /* The Avada default breakpoint is 800px. Change as needed. */
 @media screen and (min-width: 800px) {
     .hideandseek-hide-down {
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.5s, opacity 0.5s linear !important;
     }
   }

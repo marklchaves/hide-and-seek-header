@@ -76,11 +76,13 @@ class Hide_And_Seek_Header_Public {
         // Grab all options
         $options = get_option($this->plugin_name);
 
-		// Default to 800px breakpoint CSS.
 		$breakpoint_opts = 
 			(empty($options['breakpoint'])) ? 'all' : 'mdlg';	
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/hide-and-seek-header-public-' . $breakpoint_opts . '.css', array(), $this->version, 'all' );
+		$animation_opts = 
+			(empty($options['animation'])) ? '' : '-a';	
+
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/hide-and-seek-header-public-' . $breakpoint_opts . $animation_opts . '.css', array(), $this->version, 'all' );
 	}
 
 	/**
