@@ -55,13 +55,13 @@ By default, the plugin will hide headers for all devices. Check **Disable on mob
 
 Uncheck to hide the header on all devices.
 
-Click **Save all changes** to save your options.
-
-![Settings Page](screen-grabs/hide-and-seek-header-setting-screen-grab.png)
-
 ### Enable Animation
 
 The animation is disabled by default. Check **Enable animation?** to turn on a `0.5 second` fade-out effect when the header begins to disappear.
+
+Click **Save all changes** to save your options.
+
+![Settings Page](screen-grabs/hide-and-seek-header-setting-screen-grab.png)
 
 ---
 
