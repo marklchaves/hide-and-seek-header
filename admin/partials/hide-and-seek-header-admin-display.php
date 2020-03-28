@@ -43,7 +43,7 @@
             </legend>
             <label for="<?php echo $this->plugin_name; ?>-breakpoint">
                 <span>
-                    <?php esc_attr_e('Disable on Mobile?', $this->plugin_name); ?>
+                    <?php esc_attr_e('Disable on mobile?', $this->plugin_name); ?>
                 </span>
                 <input type="checkbox" id="<?php echo $this->plugin_name; ?>-breakpoint" name="<?php echo $this->plugin_name; ?>[breakpoint]" value="1" <?php checked($breakpoint_opts, 1); ?>/>
             </label>
@@ -55,7 +55,7 @@
             </legend>
             <label for="<?php echo $this->plugin_name; ?>-animation">
                 <span>
-                    <?php esc_attr_e('Enable on Animation?', $this->plugin_name); ?>
+                    <?php esc_attr_e('Enable animation?', $this->plugin_name); ?>
                 </span>
                 <input type="checkbox" id="<?php echo $this->plugin_name; ?>-animation" name="<?php echo $this->plugin_name; ?>[animation]" value="1" <?php checked($animation_opts, 1); ?>/>
             </label>
