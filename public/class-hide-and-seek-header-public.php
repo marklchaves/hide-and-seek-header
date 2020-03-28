@@ -60,19 +60,6 @@ class Hide_And_Seek_Header_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Hide_And_Seek_Header_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Hide_And_Seek_Header_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-		
         // Grab all options
         $options = get_option($this->plugin_name);
 
@@ -91,18 +78,6 @@ class Hide_And_Seek_Header_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Hide_And_Seek_Header_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Hide_And_Seek_Header_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/hide-and-seek-header-public.js', '', $this->version, true ); // Put in the footer ~mlc
 
