@@ -129,6 +129,9 @@ class Hide_And_Seek_Header_Admin
 		// Hide and Seek Mobile Animation
 		$valid['animation'] = (isset($input['animation']) && !empty($input['animation'])) ?  1 : 0;
 
+		// Hide and Seek Mobile Landing Page Mode
+		$valid['landing'] = (isset($input['landing']) && !empty($input['landing'])) ?  1 : 0;
+
 		return $valid;
 	}
 
