@@ -81,9 +81,9 @@ This plugin follows the [WordPress Plugin Handbook](https://developer.wordpress.
 
 ---
 
-## Roadmap
+## Status Updates &amp; Roadmap
 
-I'll keep an updated wishlist on [the Wiki](https://github.com/marklchaves/hide-and-seek-header/wiki) for this repo.
+I'll give status updates and keep an wishlist on [the Wiki](https://github.com/marklchaves/hide-and-seek-header/wiki) for this repo.
 
 ---
 
