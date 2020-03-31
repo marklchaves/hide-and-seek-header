@@ -29,6 +29,9 @@
         $animation_opts =
             (empty($options['animation'])) ? 0 : 1;
 
+        $landing_opts =
+            (empty($options['landing'])) ? 0 : 1;
+
         ?>
         <?php
         settings_fields($this->plugin_name);
@@ -58,6 +61,18 @@
                     <?php esc_attr_e('Enable animation?', $this->plugin_name); ?>
                 </span>
                 <input type="checkbox" id="<?php echo $this->plugin_name; ?>-animation" name="<?php echo $this->plugin_name; ?>[animation]" value="1" <?php checked($animation_opts, 1); ?>/>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="screen-reader-text">
+                <span>Landing Setting</span>
+            </legend>
+            <label for="<?php echo $this->plugin_name; ?>-landing">
+                <span>
+                    <?php esc_attr_e('Landing page mode?', $this->plugin_name); ?>
+                </span>
+                <input type="checkbox" id="<?php echo $this->plugin_name; ?>-landing" name="<?php echo $this->plugin_name; ?>[landing]" value="1" <?php checked($landing_opts, 1); ?>/>
             </label>
         </fieldset>
 

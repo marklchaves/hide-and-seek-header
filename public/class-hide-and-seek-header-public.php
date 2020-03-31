@@ -78,8 +78,23 @@ class Hide_And_Seek_Header_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
+	
+		wp_register_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/hide-and-seek-header-public.js', '', $this->version, true ); // Put in the footer ~mlc
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/hide-and-seek-header-public.js', '', $this->version, true ); // Put in the footer ~mlc
+        // Grab all options
+        $options = get_option($this->plugin_name);
+
+		$landing_mode = 
+			(empty($options['landing'])) ? 0 : $options['landing'];	
+
+		// Localize the script with new data	
+		$headerArgs = array(
+			'landing_mode' => $landing_mode,
+			$this->plugin_name
+		);
+		wp_localize_script( $this->plugin_name, 'php_vars', $headerArgs );
+
+		wp_enqueue_script( $this->plugin_name );
 
 	}
 

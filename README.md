@@ -12,11 +12,12 @@ See the [original Avada forum thread](https://theme-fusion.com/forums/topic/avad
 
 ## Features
 
-- Hides the sticky header on scroll down **only** as originally requested.
-- Option to disable on mobile (devices smaller than 800px wide&mdash;the Avada default).
-- Option to enable fade animation on hiding.
-- Super simple install. Two steps and your done.
-- Lightweight&mdash;under 100 KB zipped.
+* Hides the sticky header on scroll down **only**.
+* Option to disable on mobile (devices smaller than 800px wide&mdash;the Avada default).
+* Option to enable fade animation on hiding.
+* Option to enable landing page mode. The plugin hides the standard header (non-sticky) so only the sticky header displays on scrolling up.
+* Super simple install. Two steps and your done.
+* Lightweight&mdash;about 30 KB zipped.
 
 #### Preview
 
@@ -59,9 +60,15 @@ Uncheck to hide the header on all devices.
 
 The animation is disabled by default. Check **Enable animation?** to turn on a `0.5 second` fade-out effect when the header begins to disappear.
 
+### Enable Landing Page Mode
+
+Check **Landing page mode?**, if you want to hide the standard top header and menu on page load. This is great for minimising distractions.
+
 Click **Save all changes** to save your options.
 
-![Settings Page](screen-grabs/hide-and-seek-header-setting-screen-grab.png)
+![Settings Page](screen-grabs/hide-and-seek-settings-1280w.png)
+
+![Landing Page Mode](screen-grabs/hide-and-seek-landing-mode-1280w.png)
 
 ---
 
@@ -84,6 +91,12 @@ This plugin follows the [WordPress Plugin Handbook](https://developer.wordpress.
 ## Status Updates &amp; Roadmap
 
 I'll give status updates and keep an wishlist on [the Wiki](https://github.com/marklchaves/hide-and-seek-header/wiki) for this repo.
+
+---
+
+## Disclaimer
+
+The Hide and Seek Header plugin and its author are not affiliated with Avada or ThemeFusion in any way.
 
 ---
 
