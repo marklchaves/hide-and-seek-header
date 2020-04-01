@@ -1,4 +1,4 @@
- /**
+/**
  * Hide and Seek Header Styles for 
  * 
  * 1. All devices
@@ -8,9 +8,9 @@
 
 /* The 0px breakpoint will enable the plugin for all devices. */
 @media screen and (min-width: 0px) {
-    .hideandseek-hide-down {
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0.5s, opacity 0.5s linear !important;
-    }
+  .hideandseek-hide-down {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear !important;
   }
+}
