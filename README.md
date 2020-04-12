@@ -72,6 +72,14 @@ Click **Save all changes** to save your options.
 
 ---
 
+## Version 1.0.1
+
+Tested on WordPress 5.4. No issues. No code changes required.
+
+## Version 1.0.1
+
+Reverted CSS to original v 0.0.1 code. Version 1.0 CSS for no animation broke formatting for headers 2-5.
+
 ## Version: 1.0.0
 
 #### Developed On
