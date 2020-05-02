@@ -33,7 +33,16 @@ window.addEventListener(
     if (st > lastScrollTop) {
       document.querySelector(HEADERCLASS).classList.add(TOGGLECLASS);
     } else {
-      document.querySelector(HEADERCLASS).classList.remove(TOGGLECLASS);
+      /**
+       * Let's try to have a scroll offset to reduce 
+       * the sensitivity of the header reappearing. 
+       * 
+       * But, always show the menu when scrolled to top
+       * of the page.
+       */
+      if (((lastScrollTop - st) > 15) || (st == 0)) {
+        document.querySelector(HEADERCLASS).classList.remove(TOGGLECLASS);
+      }
     }
 
     if (landingMode == 1) {
