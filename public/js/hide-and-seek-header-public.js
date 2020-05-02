@@ -9,6 +9,7 @@
 // Define the globals.
 var lastScrollTop = 0;
 var landingMode = php_vars.landing_mode;
+var sensiSetting = 15;
 
 // Define the constants.
 const HEADERCLASS = ".fusion-header";
@@ -40,7 +41,7 @@ window.addEventListener(
        * But, always show the menu when scrolled to top
        * of the page.
        */
-      if (((lastScrollTop - st) > 15) || (st == 0)) {
+      if (((lastScrollTop - st) > sensiSetting) || (st == 0)) {
         document.querySelector(HEADERCLASS).classList.remove(TOGGLECLASS);
       }
     }
