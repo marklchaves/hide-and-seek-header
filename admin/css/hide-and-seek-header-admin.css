@@ -2,12 +2,19 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
- 
+
  .settings_page_hide-and-seek-header label > span {
     font-size: 1.2rem;
     line-height: 2;
-}
-
-.settings_page_hide-and-seek-header fieldset {
+    width: 10em;
+    display: inline-block;
+  }
+  
+  .settings_page_hide-and-seek-header fieldset {
     margin-top: 2%;
-}
+  }
+  
+  .settings_page_hide-and-seek-header input:focus {
+    /* To give a little highlight on active elements */
+    background-color: lemonchiffon;
+  }  
