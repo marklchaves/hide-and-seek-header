@@ -46,7 +46,7 @@
             </legend>
             <label for="<?php echo $this->plugin_name; ?>-breakpoint">
                 <span>
-                    <?php esc_attr_e('Disable on mobile?', $this->plugin_name); ?>
+                    <?php esc_attr_e('Disable on mobile', $this->plugin_name); ?>
                 </span>
                 <input type="checkbox" id="<?php echo $this->plugin_name; ?>-breakpoint" name="<?php echo $this->plugin_name; ?>[breakpoint]" value="1" <?php checked($breakpoint_opts, 1); ?>/>
             </label>
@@ -58,7 +58,7 @@
             </legend>
             <label for="<?php echo $this->plugin_name; ?>-animation">
                 <span>
-                    <?php esc_attr_e('Enable animation?', $this->plugin_name); ?>
+                    <?php esc_attr_e('Enable animation', $this->plugin_name); ?>
                 </span>
                 <input type="checkbox" id="<?php echo $this->plugin_name; ?>-animation" name="<?php echo $this->plugin_name; ?>[animation]" value="1" <?php checked($animation_opts, 1); ?>/>
             </label>
@@ -70,7 +70,7 @@
             </legend>
             <label for="<?php echo $this->plugin_name; ?>-landing">
                 <span>
-                    <?php esc_attr_e('Landing page mode?', $this->plugin_name); ?>
+                    <?php esc_attr_e('Landing page mode', $this->plugin_name); ?>
                 </span>
                 <input type="checkbox" id="<?php echo $this->plugin_name; ?>-landing" name="<?php echo $this->plugin_name; ?>[landing]" value="1" <?php checked($landing_opts, 1); ?>/>
             </label>
