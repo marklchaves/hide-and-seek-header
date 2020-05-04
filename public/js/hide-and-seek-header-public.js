@@ -9,10 +9,13 @@
 // Define the globals.
 var lastScrollTop = 0;
 var landingMode = php_vars.landing_mode;
+var sensiSetting = php_vars.sensi_setting; // 15;
+var sensiValue = 0; // Default is no sensitivity.
 
 // Define the constants.
 const HEADERCLASS = ".fusion-header";
 const TOGGLECLASS = "hideandseek-hide-down";
+const DEFAULT_SENSITIVITY = 15; // Sweet spot for now.
 
 function checkIfAtTop() {
   if (window.pageYOffset === 0) {
@@ -24,6 +27,10 @@ if (landingMode == 1) {
   checkIfAtTop();
 }
 
+if (sensiSetting == 1) {
+  sensiValue = DEFAULT_SENSITIVITY;
+}
+
 // Detect the scroll.
 window.addEventListener(
   "scroll",
@@ -33,7 +40,16 @@ window.addEventListener(
     if (st > lastScrollTop) {
       document.querySelector(HEADERCLASS).classList.add(TOGGLECLASS);
     } else {
-      document.querySelector(HEADERCLASS).classList.remove(TOGGLECLASS);
+      /**
+       * Let's try to have a scroll offset to reduce 
+       * the sensitivity of the header reappearing. 
+       * 
+       * But, always show the menu when scrolled to top
+       * of the page.
+       */
+      if (((lastScrollTop - st) > sensiValue) || (st == 0)) {
+        document.querySelector(HEADERCLASS).classList.remove(TOGGLECLASS);
+      }
     }
 
     if (landingMode == 1) {
