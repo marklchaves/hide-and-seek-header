@@ -9,11 +9,13 @@
 // Define the globals.
 var lastScrollTop = 0;
 var landingMode = php_vars.landing_mode;
-var sensiSetting = 15;
+var sensiSetting = php_vars.sensi_setting; // 15;
+var sensiValue = 0; // Default is no sensitivity.
 
 // Define the constants.
 const HEADERCLASS = ".fusion-header";
 const TOGGLECLASS = "hideandseek-hide-down";
+const DEFAULT_SENSITIVITY = 15; // Sweet spot for now.
 
 function checkIfAtTop() {
   if (window.pageYOffset === 0) {
@@ -23,6 +25,10 @@ function checkIfAtTop() {
 
 if (landingMode == 1) {
   checkIfAtTop();
+}
+
+if (sensiSetting == 1) {
+  sensiValue = DEFAULT_SENSITIVITY;
 }
 
 // Detect the scroll.
@@ -41,7 +47,7 @@ window.addEventListener(
        * But, always show the menu when scrolled to top
        * of the page.
        */
-      if (((lastScrollTop - st) > sensiSetting) || (st == 0)) {
+      if (((lastScrollTop - st) > sensiValue) || (st == 0)) {
         document.querySelector(HEADERCLASS).classList.remove(TOGGLECLASS);
       }
     }
