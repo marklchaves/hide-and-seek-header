@@ -86,10 +86,14 @@ class Hide_And_Seek_Header_Public {
 
 		$landing_mode = 
 			(empty($options['landing'])) ? 0 : $options['landing'];	
+		
+		$sensi_setting = 
+			(empty($options['sensitivity'])) ? 0 : $options['sensitivity'];	
 
 		// Localize the script with new data	
 		$headerArgs = array(
 			'landing_mode' => $landing_mode,
+			'sensi_setting' => $sensi_setting,
 			$this->plugin_name
 		);
 		wp_localize_script( $this->plugin_name, 'php_vars', $headerArgs );
