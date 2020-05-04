@@ -32,6 +32,9 @@
         $landing_opts =
             (empty($options['landing'])) ? 0 : 1;
 
+        $sensitivity_opts =
+            (empty($options['sensitivity'])) ? 0 : 1;
+
         ?>
         <?php
         settings_fields($this->plugin_name);
@@ -73,6 +76,23 @@
                     <?php esc_attr_e('Landing page mode', $this->plugin_name); ?>
                 </span>
                 <input type="checkbox" id="<?php echo $this->plugin_name; ?>-landing" name="<?php echo $this->plugin_name; ?>[landing]" value="1" <?php checked($landing_opts, 1); ?>/>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="screen-reader-text">
+                <span>Scroll-up Sensitivity Setting</span>
+                <p class="hide-and-see-header-subheading">(beta: check for lower sensitivity)</p>
+            </legend>
+            <label for="<?php echo $this->plugin_name; ?>-sensitivity">
+                <span>
+                    <?php esc_attr_e('Scroll-up Sensitivity', $this->plugin_name); ?>
+                </span>
+                <input type="checkbox" id="<?php echo $this->plugin_name; ?>-sensitivity" name="<?php echo $this->plugin_name; ?>[sensitivity]" value="1" <?php checked($sensitivity_opts, 1); ?>/>
+                <span class="hide-and-see-header-subheading">
+                    <?php esc_attr_e('(in beta: lowers the scroll-up sensitivity)',
+                    $this->plugin_name); ?>
+                </span>
             </label>
         </fieldset>
 
