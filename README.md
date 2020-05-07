@@ -85,7 +85,7 @@ Reverted CSS to original v 0.0.1 code. Version 1.0 CSS for no animation broke fo
 #### Developed On
 
 - WordPress: 5.3.2
-- PHP: 7.3.5
+- PHP: 7.3.5; tested on 7.2.18
 - Avada: 6.2.1; tested up to 6.2.2
 
 ---
