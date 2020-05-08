@@ -52,7 +52,7 @@ The plugin settings are under **Settings > Hide and Seek Header**.
 
 ### Disable on Mobile
 
-By default, the plugin will hide headers for all devices. Check **Disable on mobile?** to keep the header visible on small devices. The current default breakpoint is `800px`. 
+By default, the plugin will hide headers for all devices. Check **Disable on mobile** to keep the header visible on small devices. The current default breakpoint is `800px`. 
 
 Uncheck to hide the header on all devices.
 
@@ -62,17 +62,17 @@ The animation is disabled by default. Check **Enable animation?** to turn on a `
 
 ### Enable Landing Page Mode
 
-Check **Landing page mode?**, if you want to hide the standard top header and menu on page load. This is great for minimising distractions.
+Check **Landing page mode**, if you want to hide the standard top header and menu on page load. This is great for minimising distractions.
+
+### Scroll-up Sensitivity (beta)
+
+Check to lower scrolling up sensitivity. This helps reduce flickering of the header on touch screens.
 
 Click **Save all changes** to save your options.
 
 ![Settings Page](screengrabs/hide-and-seek-settings-1280w.png)
 
 ![Landing Page Mode](screengrabs/hide-and-seek-landing-mode-1280w.png)
-
-### Scroll-up Sensitivity (beta)
-
-Check to lower scrolling up sensitivity. This helps reduce flickering of the header on touch screens.
 
 ![Landing Page Mode](screengrabs/hide-and-seek-header-sensi-setting-800w.png)
 
