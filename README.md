@@ -21,7 +21,7 @@ See the [original Avada forum thread](https://theme-fusion.com/forums/topic/avad
 
 #### Preview
 
-![Plugin Preview GIF](screen-grabs/hide-and-seek-header-demo.gif)
+![Plugin Preview GIF](screengrabs/hide-and-seek-header-demo.gif)
 
 ## Codepen
 
@@ -31,7 +31,7 @@ Kick the tires on [CodePen](https://codepen.io/marklchaves/pen/RwNOVzQ).
 
 ## Installation
 
-1. Manually upload the zip of this repo to /wp-content/plugins/hide-and-seek-header directory or upload the zip via your wp-admin **Plugins** > **Add New** > **Upload Plugin**. Note: you may want to remove the `.git*` files and directories, the 0.1.1 zip file, and screen-grabs directory before uploading. These are not needed for the plugin to run.
+1. Manually upload the zip of this repo to /wp-content/plugins/hide-and-seek-header directory or upload the zip via your wp-admin **Plugins** > **Add New** > **Upload Plugin**. Note: you may want to remove the `.git*` files and directories, the 0.1.1 zip file, and screengrabs directory before uploading. These are not needed for the plugin to run.
 2. Activate the plugin through the wp-admin **Plugins** page.
 
 That's it!
@@ -66,11 +66,23 @@ Check **Landing page mode?**, if you want to hide the standard top header and me
 
 Click **Save all changes** to save your options.
 
-![Settings Page](screen-grabs/hide-and-seek-settings-1280w.png)
+![Settings Page](screengrabs/hide-and-seek-settings-1280w.png)
 
-![Landing Page Mode](screen-grabs/hide-and-seek-landing-mode-1280w.png)
+![Landing Page Mode](screengrabs/hide-and-seek-landing-mode-1280w.png)
+
+### Scroll-up Sensitivity (beta)
+
+Check to lower scrolling up sensitivity. This helps reduce flickering of the header on touch screens.
+
+![Landing Page Mode](screengrabs/hide-and-seek-header-sensi-setting-800w.png)
 
 ---
+
+## Version 1.2.0
+
+* Added scroll-up sensitivity to reduce flickering (appear/reappear) of sticky header on touch screens. (beta)
+* Refactored admin page so that setting fields line up better.
+* Added DB clean up of options on uninstall.
 
 ## Version 1.0.1
 
