@@ -58,7 +58,7 @@ Uncheck to hide the header on all devices.
 
 ### Enable Animation
 
-The animation is disabled by default. Check **Enable animation?** to turn on a `0.5 second` fade-out effect when the header begins to disappear.
+The animation is disabled by default. Check **Enable animation** to turn on a `0.5 second` fade-out effect when the header begins to disappear.
 
 ### Enable Landing Page Mode
 
