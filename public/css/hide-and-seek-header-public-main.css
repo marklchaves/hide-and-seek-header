@@ -1,0 +1,7 @@
+/**
+ * General styles for the Hide and Seek Header plugin.
+ */
+
+.hideandseek-hide-down__landing {
+  display: none !important;
+}

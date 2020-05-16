@@ -13,13 +13,16 @@ var sensiSetting = php_vars.sensi_setting; // 15;
 var sensiValue = 0; // Default is no sensitivity.
 
 // Define the constants.
+const HEADERELT = "header";
 const HEADERCLASS = ".fusion-header";
 const TOGGLECLASS = "hideandseek-hide-down";
+const LANDINGCLASS = TOGGLECLASS + '__landing';
 const DEFAULT_SENSITIVITY = 15; // Sweet spot for now.
 
 function checkIfAtTop() {
   if (window.pageYOffset === 0) {
     document.querySelector(HEADERCLASS).classList.add(TOGGLECLASS);
+    document.querySelector(HEADERELT).classList.add(LANDINGCLASS);
   }
 }
 
@@ -39,6 +42,7 @@ window.addEventListener(
     // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
     if (st > lastScrollTop) {
       document.querySelector(HEADERCLASS).classList.add(TOGGLECLASS);
+      document.querySelector(HEADERELT).classList.remove(LANDINGCLASS);
     } else {
       /**
        * Let's try to have a scroll offset to reduce 
