@@ -16,7 +16,7 @@
  * Plugin Name:       Hide and Seek Header
  * Plugin URI:        https://github.com/marklchaves/hide-and-seek-header
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Version:           1.3.0
  * Author:            caught my eye
  * Author URI:        https://caughtmyeye.cc
  * License:           GPL-2.0+
