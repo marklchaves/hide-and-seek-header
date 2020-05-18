@@ -78,6 +78,10 @@ Click **Save all changes** to save your options.
 
 ---
 
+## Version 1.3.0
+
+TBD
+
 ## Version 1.2.0
 
 * Added scroll-up sensitivity to reduce flickering (appear/reappear) of sticky header on touch screens. (beta)
