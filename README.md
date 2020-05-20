@@ -70,13 +70,31 @@ Check to lower scrolling up sensitivity. This helps reduce flickering of the hea
 
 Click **Save all changes** to save your options.
 
-![Settings Page](screengrabs/hide-and-seek-settings-1280w.png)
+---
 
-![Landing Page Mode](screengrabs/hide-and-seek-landing-mode-1280w.png)
+## Screengrabs
 
-![Landing Page Mode](screengrabs/hide-and-seek-header-sensi-setting-800w.png)
+### Settings Page
+
+![Settings Page](screengrabs/hide-and-seek-header-settings-v130-800w.jpg "Settings page")
+
+### Landing Page Mode
+
+![Landing Page Mode](screengrabs/hide-and-seek-header-landing-v130-1280w.jpg "Landing page mode")
+
+### Sensitivity Setting
+
+![Sensitivity Setting](screengrabs/hide-and-seek-header-sensi-setting-800w.png "Sensitivity setting")
 
 ---
+
+## Version 1.3.0
+
+* Fixed: If mobile menu is open, large space is left on scroll down.
+* Removed extra space left by hidden header on landing page mode. See the associated [GitHub issue](https://github.com/marklchaves/hide-and-seek-header/issues/12) for more details.
+* Removed extra space when using slider in parallax mode. However, you'll need too increase height of slider by height of header to off set the negative margin from Avada. E.g., If the height slider image is 849px and the height of header is 84, then the slider's final height should be set to 933px. This is described on the parallax setting and in the Avada docs.
+* Could **not** reliably repro active pointer events when header is hidden (even with mega menu). But, disabled pointer events in CSS when header is hidden to be extra sure. See the related [GitHub issue](https://github.com/marklchaves/hide-and-seek-header/issues/11) for more details.
+* Tested on Avada 6.2.2 and 6.2.3.
 
 ## Version 1.2.0
 

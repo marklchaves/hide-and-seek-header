@@ -60,8 +60,12 @@ class Hide_And_Seek_Header_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
+		wp_enqueue_style( $this->plugin_name . '-main', plugin_dir_url( __FILE__ ) . 'css/hide-and-seek-header-public-main.css', array(), $this->version, 'all' );
+
         // Grab all options
         $options = get_option($this->plugin_name);
+
+		// Depending on the option, load the required CSS.
 
 		$breakpoint_opts = 
 			(empty($options['breakpoint'])) ? 'all' : 'mdlg';	
@@ -69,7 +73,9 @@ class Hide_And_Seek_Header_Public {
 		$animation_opts = 
 			(empty($options['animation'])) ? '' : '-a';	
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/hide-and-seek-header-public-' . $breakpoint_opts . $animation_opts . '.css', array(), $this->version, 'all' );
+		$css_opts = $breakpoint_opts . $animation_opts;
+
+		wp_enqueue_style( $this->plugin_name . '-' . $css_opts, plugin_dir_url( __FILE__ ) . 'css/hide-and-seek-header-public-' . $css_opts . '.css', array(), $this->version, 'all' );
 	}
 
 	/**

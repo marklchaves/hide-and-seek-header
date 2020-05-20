@@ -9,8 +9,10 @@
 /* The Avada default breakpoint is 800px. Change as needed. */
 @media screen and (min-width: 800px) {
   .hideandseek-hide-down {
+    transition: visibility 0.5s, opacity 0.5s linear !important;
+    pointer-events: none;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0.5s, opacity 0.5s linear !important;
+    height: 0px;
   }
 }

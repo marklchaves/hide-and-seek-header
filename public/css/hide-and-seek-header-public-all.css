@@ -9,8 +9,10 @@
 /* The 0px breakpoint will enable the plugin for all devices. */
 @media screen and (min-width: 0px) {
   .hideandseek-hide-down {
+    transition: visibility 0s, opacity 0s linear !important;   
+    pointer-events: none;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0s linear !important;
+    height: 0px;  
   }
 }
