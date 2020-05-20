@@ -90,10 +90,10 @@ Click **Save all changes** to save your options.
 
 ## Version 1.3.0
 
-* Fixed: If mobile menu is open, large space is left on scroll down.
-* Removed extra space left by hidden header on landing page mode. See the associated [GitHub issue](https://github.com/marklchaves/hide-and-seek-header/issues/12) for more details.
-* Removed extra space when using slider in parallax mode. However, you'll need too increase height of slider by height of header to off set the negative margin from Avada. E.g., If the height slider image is 849px and the height of header is 84, then the slider's final height should be set to 933px. This is described on the parallax setting and in the Avada docs.
-* Could **not** reliably repro active pointer events when header is hidden (even with mega menu). But, disabled pointer events in CSS when header is hidden to be extra sure. See the related [GitHub issue](https://github.com/marklchaves/hide-and-seek-header/issues/11) for more details.
+* Fixed: If the mobile menu is open, a large space is left on scroll down.
+* Removed extra space left by the hidden header on landing page mode. See the associated [GitHub issue](https://github.com/marklchaves/hide-and-seek-header/issues/12) for more details.
+* Removed extra space when using a slider in parallax mode. However, you'll need to increase the height of the slider by height of the header to offset the negative margin from Avada. E.g., If the height slider image is 849px and the height of the header is 84, then the slider's final height should be set to 933px. This is described in the parallax setting and in the Avada docs.
+* Could **not** reliably repro active pointer events when the header is hidden (even with mega menu). But, disabled pointer events in CSS when the header is hidden to be extra sure. See the related [GitHub issue](https://github.com/marklchaves/hide-and-seek-header/issues/11) for more details.
 * Tested on Avada 6.2.2 and 6.2.3.
 
 ## Version 1.2.0
