@@ -82,7 +82,7 @@
         <fieldset>
             <legend class="screen-reader-text">
                 <span>Scroll-up Sensitivity Setting</span>
-                <p class="hide-and-see-header-subheading">(beta: check for lower sensitivity)</p>
+                <p class="hide-and-see-header-subheading">(check for lower sensitivity)</p>
             </legend>
             <label for="<?php echo $this->plugin_name; ?>-sensitivity">
                 <span>
@@ -90,7 +90,7 @@
                 </span>
                 <input type="checkbox" id="<?php echo $this->plugin_name; ?>-sensitivity" name="<?php echo $this->plugin_name; ?>[sensitivity]" value="1" <?php checked($sensitivity_opts, 1); ?>/>
                 <span class="hide-and-see-header-subheading">
-                    <?php esc_attr_e('(in beta: lowers the scroll-up sensitivity)',
+                    <?php esc_attr_e('(lowers the scroll-up sensitivity)',
                     $this->plugin_name); ?>
                 </span>
             </label>

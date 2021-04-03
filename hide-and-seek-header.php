@@ -16,7 +16,7 @@
  * Plugin Name:       Hide and Seek Header
  * Plugin URI:        https://github.com/marklchaves/hide-and-seek-header
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.3.0
+ * Version:           1.4.0
  * Author:            caught my eye
  * Author URI:        https://caughtmyeye.cc
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'HIDE_AND_SEEK_HEADER_VERSION', '1.0.0' );
+define( 'HIDE_AND_SEEK_HEADER_VERSION', '1.4.0' );
 
 /**
  * The code that runs during plugin activation.
