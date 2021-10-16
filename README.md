@@ -4,7 +4,7 @@
 
 ## For Avada by ThemeFusion
 
-This WordPress plugin hides the site header on down scroll events for the Avada theme. Eventually it will hide the header on scroll up or down or both (?), and it will support other themes.
+This [WordPress plugin](https://wordpress.org/plugins/hide-and-seek-header/) hides the site header on down scroll events for the Avada theme. Eventually it will hide the header on scroll up or down or both (?), and it will support other themes.
 
 ## Motivation
 
